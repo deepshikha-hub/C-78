@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <title>My family</title>
+    </head>
+    <body>
+        <audio id="audio" src="https://mahdihat791.github.io/v2/test.mp3">
+    </audio>
+    
+      <p id="firstp">My family tree</p>
+      <p>Here are 5 Reasons to love my family.
+        <p>
+    <img id="album" src="https://images.unsplash.com/photo-1581579186913-45ac3e6efe93?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ">
+     <div>
+            <button type="button" onclick="nextslide()"> Next </button>
+     </div>
+     <p id="reasontext"> "My grandfather"</p>
+
+     <script>
+var reasons = [
+  "My father",
+  "My mother",
+  "Me",
+  "My brother"
+];
+
+var images = [
+  "https://images.unsplash.com/photo-1536541667880-3945b221a85d?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+  "https://images.unsplash.com/photo-1484425304707-d8246c26cda2?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+  "https://images.unsplash.com/photo-1546959069-56771a9e1d7b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+  "https://images.unsplash.com/photo-1579021451299-459eb91b06f8?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+];
+
+var i = 0;
+function nextslide() {  document.getElementById("reasontext").innerHTML = reasons[i];
+  document.getElementById("album").src = images[i];
+  i++;
+                      document.getElementById("audio").play();
+ 
+}
+
+
+     </script>
+    </body>
+    </html>
+       
